@@ -75,7 +75,40 @@
     margin-top: 50px;
 }
 
-.about-image img {
-    margin: 50px;
+#about.section {
+    margin: 0 auto;
 
+    width: 100vw;
 }
+
+#about .about-content {
+    margin: 0 50px;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#about .about-content .about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 30vw;
+}
+
+#about .about-content .about-text {
+    width: 100%;
+    padding: 1.5rem;
+    height: auto;
+    text-align: center;
+}
+
+#about .about-content .about-image {
+    grid-row: 1/3;
+}
+
+/* #about .about-content .about-text-grid-headline {}
+
+#about .about-content .about-text-grid-parag {
+    grid: 2/3;
+} */
